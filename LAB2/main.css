@@ -1,0 +1,29 @@
+body {
+    background-color: skyblue;
+}
+
+
+
+
+
+
+
+/*
+한 개의 external CSS style sheet 파일 제출
+<link rel = “stylesheet” type = “text/css” href = “main.css”>
+login.html, signup.html에서 main.css를 참조하기 위한 코드
+아래 10개의 properties 모두 사용 (한 개 당 5점)
+
+background-color
+text-align
+padding
+margin
+border
+font-size
+font-family
+color
+width
+height
+
+컴포넌트들의 class명은 자유롭게 작성
+*/
