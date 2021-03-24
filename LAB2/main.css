@@ -1,9 +1,41 @@
 body {
-    background-color: skyblue;
+    background-color: aliceblue;
+    padding: 4px;
 }
 
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 64px;
+    text-align: center;
+}
 
+button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    background-color: aliceblue;
+}
 
+.submitbutton {
+    color:cornflowerblue;
+    background-color: aliceblue;
+    border: double;
+    width: 80px;
+    height: 30px;
+}
+
+form {
+    margin: 16px;
+}
+
+.resetbutton {
+    color:red;
+    background-color: aliceblue;
+    border: double;
+    width: 80px;
+    height: 30px;
+}
 
 
 
