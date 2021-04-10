@@ -69,10 +69,7 @@ form {
         margin-bottom: 8px;
         overflow:hidden;
 }
-.div_item 
-    .item_image {
-        margin:0 auto;
-    }
+
 .item_image img{
     width: 150px;
     height: 150px;
