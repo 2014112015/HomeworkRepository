@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            @import url("main.css");
+        </style>
+        <link rel = “stylesheet” type = "text/css" href = “main.css”>
+        <title> main page </title>
+    </head>
+
+    <body>
+        <div id="div_main">
+            <h1 class="header_main">First Online Shop</h1>
+            <hr>
+            <button type="button" onclick="location.href='index.html'">Main page</button>
+            <button type="button" onclick="location.href='login.html'">Log in</button>
+            <button type="button" onclick="location.href='signup.html'">Sign up</button>
+            <hr>
+            <h2> Items </h2>
+            <hr>
+
+            <div class="div_item"> 
+                <div class="item_image">
+                    <img src="img01.jpg"> 
+                </div>
+                
+            </div>
+            <p class="item_name"> Item#1 </p>
+
+            <hr>
+
+            <div class="multicol_text">
+                The eponymous brand was founded in 1961 by designer Yves Saint Laurent and his partner, Pierre Bergé, and the current logos were designed in 1963 by A. M. Cassandre. During the 1960s and 1970s, the firm popularized fashion trends such as the beatnik look, safari jackets for men and women, tight pants and tall, thigh-high boots, including the creation of arguably the most famous classic tuxedo suit for women in 1966, Le Smoking suit. Some of his most memorable collections include the Pop Art, Ballet Russes, Picasso, and Chinese ones. He also started mainstreaming the idea of wearing silhouettes from the 1920s, 1930s and 1940s. He was the first, in 1966, to popularize ready-to-wear in an attempt to democratize fashion, with Rive Gauche and a boutique of the same name. Among Saint Laurent's muses were Loulou de La Falaise, the daughter of a French marquis and an Anglo-Irish fashion model; Betty Catroux, the half-Brazilian daughter of an American diplomat and wife of a French decorator; Talitha Pol-Getty, a model and actress whose husband was a Getty heir; and Catherine Deneuve, the French actress.
+            </div>
+            <hr>
+            <a class="ender" href = "https://en.wikipedia.org/wiki/Yves_Saint_Laurent_(brand)"> 
+                reference of the long text of multicol_text is wikipedia </a>
+
+        </div>
+    </body>
+</html>
+
+
+<!--
+Index.html에 보이는 컴포넌트들은 width가 1020px 내에 존재해야 하고 가운데에 존재해야 함(15pt, 1개의 컴포넌트라도 1020px을 넘어가면 0점)
+
+========
+Animation을 통해 오른쪽(시작점)에서 왼쪽(끝점)으로 헤더 텍스트가 2초 동안 슬라이딩 해야 함
+
+Animation-duration 사용(5pt)
+Animation-name, @keyframes 사용(5pt, 1개라도 사용안하면 0점)
+이때, 헤더 텍스트가 멈출 때 1020px을 넘어가면 안됨(25pt) (시작점에서는 넘어도됨)
+
+Js 사용하면 안되고 html, css로만 해결해야 함(hint: 헤더 텍스트를 감싸고 있는 컴포넌트들의 width 조절)
+1020px을 넘어가거나 js를 사용하면 0점
+========
+
+========
+네비게이션 부분에 페이지간의 링킹이 있어야함
+메인페이지 -> 로그인 페이지(5pt)
+메인페이지 -> 회원가입 페이지(5pt)
+========
+
+========
+판매하고자 하는 아이템의 이미지 최소 1개가 2초 동안 가로, 세로가 감싸고 있는 박스만큼 커져야 함
+transition, hover 사용(20pt, 1개라도 안쓰면 0점)
+이미지가 안보이거나 위 기능이 제대로 작동안하면 0점입니다.
+========
+
+========
+multicolumn layout을 통해 웹사이트 소개
+Column-count, column-gap, column-width, column-rule-style, column-rule-width 사용(20pt, 1개라도 안쓰면 0점)
+========
+
+https://2014112015.github.io/HomeworkRepository/LAB3/index.html
+LAB3_<student_id>.zip
+-->
