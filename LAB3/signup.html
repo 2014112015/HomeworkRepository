@@ -11,95 +11,61 @@
     </head>
 
     <body>
-        <h1>First Online Shop</h1>
-        <hr>
-        <button type="button" onclick="location.href='index.html'">Main page</button>
-        <button type="button" onclick="location.href='login.html'">Log in</button>
-        <button type="button" onclick="location.href='signup.html'">Sign up</button>
-        <hr>
-        <h2>개인 정보 입력( * 표시는 필수항목입니다.)</h2>
+        <div class="div_main">
+            <h1>First Online Shop</h1>
+            <hr>
+            <button type="button" onclick="location.href='index.html'">Main page</button>
+            <button type="button" onclick="location.href='login.html'">Log in</button>
+            <button type="button" onclick="location.href='signup.html'">Sign up</button>
+            <hr>
+            <h2>개인 정보 입력( * 표시는 필수항목입니다.)</h2>
 
         
-        <form method="GET" action="login.html">
+            <form method="GET" action="login.html">
 
-            <p>
-                <label> 
-                    이름: <input name="name" type="text" required="required" autofocus/> *
-                </label>
-            </p>
-            
-            <p> 
-                <label> 
-                    생년월일: <input name="dob" type="date" required = "required" /> *
-                </label>
-            </p>
+                <p>
+                    <label> 
+                        이름: <input name="name" type="text" required="required" autofocus/> *
+                    </label>
+                </p>
+                
+                <p> 
+                    <label> 
+                        생년월일: <input name="dob" type="date" required = "required" /> *
+                    </label>
+                </p>
 
-            <p>
-                <label> 
-                    아이디: <input name="user_id" type="text" required="required" autocomplete="on" /> * 
-                </label>
-            </p>
+                <p>
+                    <label> 
+                        아이디: <input name="user_id" type="text" required="required" autocomplete="on" /> * 
+                    </label>
+                </p>
 
-            <p>
-                <label> 
-                    비밀번호: <input name="pwd" type="password" required="required" /> * 
-                </label>
-            </p>
+                <p>
+                    <label> 
+                        비밀번호: <input name="pwd" type="password" required="required" /> * 
+                    </label>
+                </p>
 
-            <p>
-                <label> 
-                    휴대폰 번호: <input name="phonenum" type="tel" pattern="(010)-\d{4}-\d{4}" placeholder="010-nnnn-nnnn"/> 
-                </label>
-            </p>
+                <p>
+                    <label> 
+                        휴대폰 번호: <input name="phonenum" type="tel" pattern="(010)-\d{4}-\d{4}" placeholder="010-nnnn-nnnn"/> 
+                    </label>
+                </p>
 
-            <p>
-                <label> 
-                    이메일 주소: <input name="mail_addr" type="email" placeholder="userid@example.com"/> 
-                </label>
-            </p>
+                <p>
+                    <label> 
+                        이메일 주소: <input name="mail_addr" type="email" placeholder="userid@example.com"/> 
+                    </label>
+                </p>
 
-            <p>
-                <a href="login.html">
-                <input class="submitbutton" type="submit" value="Sign in"/></a>
-                <input class ="resetbutton" type="reset" value="Cancel"/>
-            </p>
-
-        </form>
-        
+                <p>
+                    <a href="login.html">
+                    <input class="submitbutton" type="submit" value="Sign in"/></a>
+                    <input class ="resetbutton" type="reset" value="Cancel"/>
+                </p>
+            </form>
+        </div>
     </body>
 
 </html>
-
-
-
-
-
-<!--
-Requirements (50점 만점)
-
-최소 5개의 각기 다른 HTML5 inputs 
-한 개의 input 칸 마다 4점 (총 5개: 20점)
-다음과 같은 각기 다른 attribute 최소 한번씩 사용 (총 5번 HTML input 받을 때)
-Autocomplete, autofocus, placeholder, required, pattern, etc. 중 하나씩 
-한 개의 인풋마다 위와 같은 attribute 사용시 4점 (총 5개: 20점)
-단 5개 모두 서로 다른 attribute 사용이여야 함 
-중복 일 시 점수는 한 개 사용에 대해서만 받음
-<p>
-    <label> 
-        sample label: <input name="" type="" /> 
-    </label>
-</p>
-
-
-
-
-login.html 페이지로 link 되어있는 버튼 (총 10점)
-
-
-Redirection 버튼/링크 (5점)
-singup 페이지에서 login 페이지로 redirection 해주는 기능
-
-
-login 페이지 (5점)
-signup 페이지 및 예시와 같이 비슷하게만 꾸며 주면 점수 부여 
--->
