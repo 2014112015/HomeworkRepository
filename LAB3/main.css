@@ -38,7 +38,9 @@ form {
 /*main division*/
 .div_main {
     background-color: white;
+    /*
     box-shadow: 4px 4px 2px gray;
+    */
     width: 1020px;
     padding: 8px;
     margin:0 auto;    
@@ -69,7 +71,6 @@ form {
         margin-bottom: 8px;
         overflow:hidden;
 }
-
 .item_image img{
     width: 150px;
     height: 150px;
