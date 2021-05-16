@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            @import url("main.css");
+        </style>
+        <link rel = “stylesheet” type = "text/css" href = “main.css”>
+        <title> main page </title>
+        <script type="text/javascript" language="javascript" src="jquery-1.8.2.min.js">
+            let counter=1;
+            document.addEventListener('DOMContentLoaded', load);
+            window.onscroll = () => {
+                if (window.innerHeight + window.scrollY >= document.getElementById('infinite').offsetHeight) {
+                    load();
+                }
+            };
+
+            function load() {
+                const start = counter;
+                const end = start + 1;
+                counter = end + 1;
+                fetch("product.json?item_id=${start}&item_id${end}")
+                .then(response => response.json())
+                .then(items => {
+                    items.forEach(add_item);
+                })
+            };
+
+            function add_item(product) {
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.innerHTML = product.name;
+                document.querySelector('items').append(item);
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <div class="div_main">
+            <h1 class="header_main">First Online Shop</h1>
+            <hr>
+            <button type="button" onclick="location.href='index.html'">Main page</button>
+            <button type="button" onclick="location.href='login.html'">Log in</button>
+            <button type="button" onclick="location.href='signup.html'">Sign up</button>
+            <hr>
+            <h2> Items </h2>
+            <hr>
+            
+            <p> category: </p>
+            <p> search: </p>
+
+
+            <div id = "infinite">
+                <div id="items">
+                </div>
+            </div>
+
+            <p class="item_name"> Item#1 </p>
+
+            <hr>
+
+            <div class="multicol_text">
+                &nbsp;The eponymous brand was founded in 1961 by designer Yves Saint Laurent and his partner, Pierre Bergé, and the current logos were designed in 1963 by A. M. Cassandre. During the 1960s and 1970s, the firm popularized fashion trends such as the beatnik look, safari jackets for men and women, tight pants and tall, thigh-high boots, including the creation of arguably the most famous classic tuxedo suit for women in 1966, Le Smoking suit. Some of his most memorable collections include the Pop Art, Ballet Russes, Picasso, and Chinese ones. He also started mainstreaming the idea of wearing silhouettes from the 1920s, 1930s and 1940s. He was the first, in 1966, to popularize ready-to-wear in an attempt to democratize fashion, with Rive Gauche and a boutique of the same name. Among Saint Laurent's muses were Loulou de La Falaise, the daughter of a French marquis and an Anglo-Irish fashion model; Betty Catroux, the half-Brazilian daughter of an American diplomat and wife of a French decorator; Talitha Pol-Getty, a model and actress whose husband was a Getty heir; and Catherine Deneuve, the French actress.
+            </div>
+            <hr>
+            <a class="ender" href = "https://en.wikipedia.org/wiki/Yves_Saint_Laurent_(brand)"> 
+                The long text above is from wikipedia </a>
+
+        </div>
+    </body>
+</html>
+
+
+<!--
+
+키워드 검색을 통해 제품 유형을 검색하면 해당하는 제품을 필터링 해서 보여줌
+
+제품에 대한 정보를 JSON 파일 (product.json) 로 저장하여 (20pt)
+JSON 파일을 FetchAPI를 이용해 불러와야 함 (25pt)
+제품 출력시 Infinite Scroll 구현 (30pt)
+JSON 파일에 infinite scroll 구현 가능한 만큼의 제품의 수는 포함해야 함
+제품 필터링 
+키워드 검색 기능 (15pt)
+카테고리 필터링 (15pt)
+
+JS를 사용하여 특정 제품을 선택하면 제품에 대한 설명을 출력함 (20pt)
+제품 그림과 text로 어떠한 제품인지에 대한 설명
+선택 시 설명이 나타나는 기능 
+가격, 이미지, text 설명, etc. 중 최소 두개의 설명이 나타나야 함
+
+
+Index.html에 보이는 컴포넌트들은 width가 1020px 내에 존재해야 하고 가운데에 존재해야 함(15pt, 1개의 컴포넌트라도 1020px을 넘어가면 0점)
+제출 페이지 간의 linking이 있어야 함 + main.css(10pt, 한 개라도 빠질 시 0점)
+메인페이지 <-> 로그인 페이지
+메인페이지 <-> 회원가입 페이지
+로그인 페이지 <-> 회원가입 페이지
+-->
