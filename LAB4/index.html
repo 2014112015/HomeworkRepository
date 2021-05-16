@@ -20,7 +20,7 @@
                 const start = counter;
                 const end = start + 1;
                 counter = end + 1;
-                fetch("product.json?item_id=${start}&item_id${end}")
+                fetch("https://github.com/2014112015/HomeworkRepository/blob/master/LAB4/product.json?item_id=${start}&item_id${end}")
                 .then(response => response.json())
                 .then(items => {
                     items.forEach(add_item);
