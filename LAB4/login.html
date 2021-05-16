@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            @import url("main.css");
+        </style>
+        <link rel = “stylesheet” type = "text/css" href = “main.css”>
+        <title> login </title>
+    </head>
+
+    <body>
+        <div class="div_main">
+            <h1>First Online Shop</h1>
+            <hr>
+            <button type="button" onclick="location.href='index.html'">Main page</button>
+            <button type="button" onclick="location.href='login.html'">Log in</button>
+            <button type="button" onclick="location.href='signup.html'">Sign up</button>
+            <hr>
+
+            <form method="GET" action="login.html">
+                <p>
+                    <label> 
+                        아이디: <input name="user_id" type="text" required="required" autocomplete="on" autofocus/> 
+                    </label>
+                </p>
+
+                <p>
+                    <label> 
+                        비밀번호: <input name="pwd" type="password" required="required" autocomplete="on"/> 
+                    </label>
+                </p>
+
+                <p>
+                    <a href="login.html">
+                        <input class="submitbutton" type="submit" value="Log in"/></a>
+                </p>
+
+            </form>
+        </div>
+    </body>
+
+</html>
+
+
+
+
+
