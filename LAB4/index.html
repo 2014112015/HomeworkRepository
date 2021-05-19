@@ -25,10 +25,12 @@
 
             function load() {
                 const start = counter;
-                counter = start + 1;
-                fetch(`https://raw.githubusercontent.com/2014112015/HomeworkRepository/master/LAB4/product.json?post_id=${start}`)
+                const end = start + 1;
+                counter = end + 1;
+                fetch(`https://raw.githubusercontent.com/2014112015/HomeworkRepository/master/LAB4/product.json?post_id=${start}&post_id=${end}`)
                 .then(response => response.json())
                 .then(items => {
+                    if (counter<=4)
                         items.forEach(add_item);
                 })
             };
@@ -111,7 +113,7 @@
             <label for="selector">Choose a type:</label>
 
             <select id="selector" onchange="selector()">
-                <option value="">choose an option</option>
+                <option value="">All</option>
                 <option value="phone">phone</option>
                 <option value="tablet">tablet</option>
                 <option value="headset">headset</option>
