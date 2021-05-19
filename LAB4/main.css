@@ -1,4 +1,14 @@
 /*LAB2*/
+html {
+
+    margin: 0;
+
+    height: 100%;
+
+    overflow: auto;
+
+}
+
 body {
     background-color: aliceblue;
     padding: 4px;
@@ -115,7 +125,8 @@ form {
     */
     width: 1020px;
     padding: 8px;
-    margin:0 auto;    
+    margin:0 auto;
+    max-height: fit-content;     
 }
 
 

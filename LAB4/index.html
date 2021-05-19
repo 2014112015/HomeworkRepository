@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" user-scalable="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <style type="text/css">
             @import url("main.css");
         </style>
@@ -14,18 +14,19 @@
         <script type="text/javascript" language="javascript">
             let counter=1;
             document.addEventListener('DOMContentLoaded', load);
+
             
             window.onscroll = () => {
-                if (window.innerHeight+window.scrollY >= document.body.offsetHeight) {
+                if (window.scrollY > (document.body.offsetHeight - window.outerHeight)) {
                     load();
                 }
             };
-          
+            //window.innerHeight+window.scrollY >= document.body.offsetHeight
+
             function load() {
                 const start = counter;
-                const end = start + 1;
-                counter = end + 1;
-                fetch(`https://raw.githubusercontent.com/2014112015/HomeworkRepository/master/LAB4/product.json?post_id=${start}&post_id${end}`)
+                counter = start + 1;
+                fetch(`https://raw.githubusercontent.com/2014112015/HomeworkRepository/master/LAB4/product.json?post_id=${start}`)
                 .then(response => response.json())
                 .then(items => {
                         items.forEach(add_item);
@@ -50,6 +51,8 @@
                 };
                 document.querySelector('.div_main').append(item);
             }
+
+
 
             function filter() {
                 let searcher = document.getElementById("searcher").value.toLowerCase();
@@ -109,10 +112,10 @@
 
             <select id="selector" onchange="selector()">
                 <option value="">choose an option</option>
-                <option value="type1">type1</option>
-                <option value="type2">type2</option>
-                <option value="type3">type3</option>
-                <option value="type4">type4</option>
+                <option value="phone">phone</option>
+                <option value="tablet">tablet</option>
+                <option value="headset">headset</option>
+                <option value="computer">computer</option>
             </select>
             
         </div>
