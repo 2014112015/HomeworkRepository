@@ -77,7 +77,7 @@
         "image": "earpods.png",
         "price": "5$",
         "comment": "this is Earpods",
-        "type": "headphones"
+        "type": "headset"
     },
 
     {
@@ -86,7 +86,7 @@
         "image": "airpods.png",
         "price": "149$",
         "comment": "this is Airpods",
-        "type": "headphones"
+        "type": "headset"
     },
 
     {
@@ -95,7 +95,7 @@
         "image": "airpodspro.png",
         "price": "199$",
         "comment": "this is Airpods Pro",
-        "type": "headphones"
+        "type": "headset"
     },
 
     {
@@ -104,7 +104,7 @@
         "image": "airpodsmax.png",
         "price": "599$",
         "comment": "this is Airpods Max",
-        "type": "headphones"
+        "type": "headset"
     },
 
     {
