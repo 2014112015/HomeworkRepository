@@ -1,130 +1,146 @@
 [
     {
         "post_id": 1,
-        "name": "name1-",
-        "image": "img01.png",
-        "price": "1000",
-        "type": "type1"
+        "name": "iPhone 11",
+        "image": "iphone11.png",
+        "price": "799$",
+        "comment": "this is iPhone 11",
+        "type": "phone"
     },
 
     {
         "post_id": 1,
-        "name": "name2-",
-        "image": "img01.png",
-        "price": "2000",
-        "type": "type1"
+        "name": "iPhone 11 Pro",
+        "image": "iphone11pro.png",
+        "price": "999$",
+        "comment": "this is iPhone 11 pro",
+        "type": "phone"
     },
 
     {
         "post_id": 1,
-        "name": "name3-",
-        "image": "img01.png",
-        "price": "3000",
-        "type": "type1"
+        "name": "iPhone 12",
+        "image": "iphone12.png",
+        "price": "799$",
+        "comment": "this is iPhone 12",
+        "type": "phone"
     },
 
     {
         "post_id": 1,
-        "name": "name4-",
-        "image": "img01.png",
-        "price": "1000",
-        "type": "type1"
+        "name": "iPhone 12 Pro",
+        "image": "iphone12pro.png",
+        "price": "999$",
+        "comment": "this is iPhone 12 pro",
+        "type": "phone"
     },
 
     {
         "post_id": 2,
-        "name": "name5-",
-        "image": "img01.png",
-        "price": "5000",
-        "type": "type2"
+        "name": "iPad",
+        "image": "ipad.png",
+        "price": "499$",
+        "comment": "this is iPad",
+        "type": "tablet"
     },
 
     {
         "post_id": 2,
-        "name": "name6-",
-        "image": "img01.png",
-        "price": "1000",
-        "type": "type2"
+        "name": "ipad Air",
+        "image": "ipadair.png",
+        "price": "599$",
+        "comment": "this is iPad Air",
+        "type": "tablet"
     },
 
     {
         "post_id": 2,
-        "name": "name7-",
-        "image": "img01.png",
-        "price": "2000",
-        "type": "type2"
+        "name": "iPad Pro 11.0",
+        "image": "ipadpro110.png",
+        "price": "899$",
+        "comment": "this is iPad Pro 11.0 inch",
+        "type": "tablet"
     },
 
     {
         "post_id": 2,
-        "name": "name8-",
-        "image": "img01.png",
-        "price": "3000",
-        "type": "type2"
+        "name": "iPad Pro 12.9",
+        "image": "ipadpro129.png",
+        "price": "1099$",
+        "comment": "this is iPad Pro 12.9 inch",
+        "type": "tablet"
     },
 
     {
         "post_id": 3,
-        "name": "name9-",
-        "image": "img01.png",
-        "price": "2000",
-        "type": "type3"
+        "name": "Earpods",
+        "image": "earpods.png",
+        "price": "5$",
+        "comment": "this is Earpods",
+        "type": "headphones"
     },
 
     {
         "post_id": 3,
-        "name": "name10-",
-        "image": "img01.png",
-        "price": "1000",
-        "type": "type3"
+        "name": "Airpods",
+        "image": "airpods.png",
+        "price": "149$",
+        "comment": "this is Airpods",
+        "type": "headphones"
     },
 
     {
         "post_id": 3,
-        "name": "name11-",
-        "image": "img01.png",
-        "price": "9000",
-        "type": "type3"
+        "name": "Airpods Pro",
+        "image": "airpodspro.png",
+        "price": "199$",
+        "comment": "this is Airpods Pro",
+        "type": "headphones"
     },
 
     {
         "post_id": 3,
-        "name": "name12-",
-        "image": "img01.png",
-        "price": "2000",
-        "type": "type3"
+        "name": "Airpods Max",
+        "image": "airpodsmax.png",
+        "price": "599$",
+        "comment": "this is Airpods Max",
+        "type": "headphones"
     },
 
     {
         "post_id": 4,
-        "name": "name13-",
-        "image": "img01.png",
-        "price": "11000",
-        "type": "type4"
+        "name": "MacBook Air",
+        "image": "macbookair.png",
+        "price": "899$",
+        "comment": "this is MacBook Air",
+        "type": "computer"
     },
 
     {
         "post_id": 4,
-        "name": "name14-",
-        "image": "img01.png",
-        "price": "14000",
-        "type": "type4"
+        "name": "MacBook",
+        "image": "macbookpro.png",
+        "price": "799$",
+        "comment": "this is MacBook Pro",
+        "type": "computer"
     },
 
     {
         "post_id": 4,
-        "name": "name15-",
-        "image": "img01.png",
-        "price": "2000",
-        "type": "type4"
+        "name": "Mac Mini",
+        "image": "macmini.png",
+        "price": "699$",
+        "comment": "this is Mac Mini",
+        "type": "computer"
     },
 
     {
         "post_id": 4,
-        "name": "name16-",
-        "image": "img01.png",
-        "price": "12000",
-        "type": "type4"
+        "name": "Mac Pro",
+        "image": "macpro.png",
+        "price": "999$",
+        "comment": "this is Mac Pro",
+        "type": "computer"
     }
 
 ]

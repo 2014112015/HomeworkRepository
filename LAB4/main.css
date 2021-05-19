@@ -91,14 +91,31 @@ form {
     #items {
         border:1px solid; 
         padding:inherit;
+        
         height: 300px;
         width: 600px;
+        
         margin-bottom: 8px;
-        overflow:hidden;
 }
 
 .item {
     background-color: aliceblue;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+
+.item:active {
+
+}
+
+#posts {
+    background-color: white;
+    /*
+    box-shadow: 4px 4px 2px gray;
+    */
+    width: 1020px;
+    padding: 8px;
+    margin:0 auto;    
 }
 
 

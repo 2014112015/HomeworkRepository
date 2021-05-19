@@ -2,39 +2,89 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" user-scalable="no" />
         <style type="text/css">
             @import url("main.css");
         </style>
         <link rel = “stylesheet” type = "text/css" href = “main.css”>
         <title> main page </title>
-        <script type="text/javascript" language="javascript" src="jquery-1.8.2.min.js">
+
+
+        
+        <script type="text/javascript" language="javascript">
             let counter=1;
             document.addEventListener('DOMContentLoaded', load);
+            
             window.onscroll = () => {
-                if (window.innerHeight + window.scrollY >= document.getElementById('infinite').offsetHeight) {
+                if (window.innerHeight+window.scrollY >= document.body.offsetHeight) {
                     load();
                 }
             };
-
+          
             function load() {
                 const start = counter;
                 const end = start + 1;
                 counter = end + 1;
-                fetch("https://github.com/2014112015/HomeworkRepository/blob/master/LAB4/product.json?item_id=${start}&item_id${end}")
+                fetch(`https://raw.githubusercontent.com/2014112015/HomeworkRepository/master/LAB4/product.json?post_id=${start}&post_id${end}`)
                 .then(response => response.json())
                 .then(items => {
-                    items.forEach(add_item);
+                        items.forEach(add_item);
                 })
             };
 
             function add_item(product) {
                 const item = document.createElement('div');
                 item.className = 'item';
-                item.innerHTML = product.name;
-                document.querySelector('items').append(item);
+                item.innerHTML = "<img src='" +product.image+"' height=250px/> <hr>" 
+                    + product.name + "<br>" 
+                    + product.post_id +"<br>"
+                    + product.type;
+
+                item.onclick = function(){
+                    item.innerHTML = "<img src='" +product.image+"' height=250px/> <hr>" 
+                    + product.name + "<br>" 
+                    + product.post_id +"<br>"
+                    + product.type +"<br>"
+                    + product.price + "<br>"
+                    + product.comment;
+                };
+                document.querySelector('.div_main').append(item);
             }
 
+            function filter() {
+                let searcher = document.getElementById("searcher").value.toLowerCase();
+                let items = document.getElementsByClassName("item");
+                for (let i=0; i<items.length; i++) {
+                    let item = items[i];
+                    if (item.innerHTML.toLowerCase().includes(searcher)) {
+                        item.style.display = "block"
+                    }
+                    else {
+                        item.style.display = "none"
+                    }
+                }
+            }
+
+            function selector() {
+                let selector = document.getElementById("selector").value.toLowerCase();
+                let items = document.getElementsByClassName("item");
+                for (let i=0; i<items.length; i++) {
+                    let item = items[i];
+                    if (item.innerHTML.toLowerCase().includes(selector)) {
+                        item.style.display = "block"
+                    }
+                    else {
+                        item.style.display = "none"
+                    }
+                }
+            }
+
+
         </script>
+        
+        
+        
+
     </head>
 
     <body>
@@ -48,27 +98,30 @@
             <h2> Items </h2>
             <hr>
             
-            <p> category: </p>
-            <p> search: </p>
-
-
-            <div id = "infinite">
-                <div id="items">
-                </div>
+            <div class="search_box">
+                <label>
+                    search:
+                    <input type="text" id="searcher" onkeyup="filter()" placeholder="type name"/>
+                </label>
             </div>
 
-            <p class="item_name"> Item#1 </p>
+            <label for="selector">Choose a type:</label>
 
-            <hr>
-
-            <div class="multicol_text">
-                &nbsp;The eponymous brand was founded in 1961 by designer Yves Saint Laurent and his partner, Pierre Bergé, and the current logos were designed in 1963 by A. M. Cassandre. During the 1960s and 1970s, the firm popularized fashion trends such as the beatnik look, safari jackets for men and women, tight pants and tall, thigh-high boots, including the creation of arguably the most famous classic tuxedo suit for women in 1966, Le Smoking suit. Some of his most memorable collections include the Pop Art, Ballet Russes, Picasso, and Chinese ones. He also started mainstreaming the idea of wearing silhouettes from the 1920s, 1930s and 1940s. He was the first, in 1966, to popularize ready-to-wear in an attempt to democratize fashion, with Rive Gauche and a boutique of the same name. Among Saint Laurent's muses were Loulou de La Falaise, the daughter of a French marquis and an Anglo-Irish fashion model; Betty Catroux, the half-Brazilian daughter of an American diplomat and wife of a French decorator; Talitha Pol-Getty, a model and actress whose husband was a Getty heir; and Catherine Deneuve, the French actress.
-            </div>
-            <hr>
-            <a class="ender" href = "https://en.wikipedia.org/wiki/Yves_Saint_Laurent_(brand)"> 
-                The long text above is from wikipedia </a>
-
+            <select id="selector" onchange="selector()">
+                <option value="">choose an option</option>
+                <option value="type1">type1</option>
+                <option value="type2">type2</option>
+                <option value="type3">type3</option>
+                <option value="type4">type4</option>
+            </select>
+            
         </div>
+
+        
+        <div id="posts">
+            
+        </div>
+
     </body>
 </html>
 
