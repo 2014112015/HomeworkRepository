@@ -1,114 +1,130 @@
 [
     {
         "post_id": 1,
-        "name": "name",
+        "name": "name1-",
         "image": "img01.png",
-        "type": "type"
+        "price": "1000",
+        "type": "type1"
     },
 
     {
         "post_id": 1,
-        "name": "name",
+        "name": "name2-",
         "image": "img01.png",
-        "type": "type"
+        "price": "2000",
+        "type": "type1"
     },
 
     {
         "post_id": 1,
-        "name": "name",
+        "name": "name3-",
         "image": "img01.png",
-        "type": "type"
+        "price": "3000",
+        "type": "type1"
     },
 
     {
         "post_id": 1,
-        "name": "name",
+        "name": "name4-",
         "image": "img01.png",
-        "type": "type"
+        "price": "1000",
+        "type": "type1"
     },
 
     {
         "post_id": 2,
-        "name": "name",
+        "name": "name5-",
         "image": "img01.png",
-        "type": "type"
+        "price": "5000",
+        "type": "type2"
     },
 
     {
         "post_id": 2,
-        "name": "name",
+        "name": "name6-",
         "image": "img01.png",
-        "type": "type"
+        "price": "1000",
+        "type": "type2"
     },
 
     {
         "post_id": 2,
-        "name": "name",
+        "name": "name7-",
         "image": "img01.png",
-        "type": "type"
+        "price": "2000",
+        "type": "type2"
     },
 
     {
         "post_id": 2,
-        "name": "name",
+        "name": "name8-",
         "image": "img01.png",
-        "type": "type"
+        "price": "3000",
+        "type": "type2"
     },
 
     {
         "post_id": 3,
-        "name": "name",
+        "name": "name9-",
         "image": "img01.png",
-        "type": "type"
+        "price": "2000",
+        "type": "type3"
     },
 
     {
         "post_id": 3,
-        "name": "name",
+        "name": "name10-",
         "image": "img01.png",
-        "type": "type"
+        "price": "1000",
+        "type": "type3"
     },
 
     {
         "post_id": 3,
-        "name": "name",
+        "name": "name11-",
         "image": "img01.png",
-        "type": "type"
+        "price": "9000",
+        "type": "type3"
     },
 
     {
         "post_id": 3,
-        "name": "name",
+        "name": "name12-",
         "image": "img01.png",
-        "type": "type"
+        "price": "2000",
+        "type": "type3"
     },
 
     {
         "post_id": 4,
-        "name": "name",
+        "name": "name13-",
         "image": "img01.png",
-        "type": "type"
+        "price": "11000",
+        "type": "type4"
     },
 
     {
         "post_id": 4,
-        "name": "name",
+        "name": "name14-",
         "image": "img01.png",
-        "type": "type"
+        "price": "14000",
+        "type": "type4"
     },
 
     {
         "post_id": 4,
-        "name": "name",
+        "name": "name15-",
         "image": "img01.png",
-        "type": "type"
+        "price": "2000",
+        "type": "type4"
     },
 
     {
         "post_id": 4,
-        "name": "name",
+        "name": "name16-",
         "image": "img01.png",
-        "type": "type"
+        "price": "12000",
+        "type": "type4"
     }
 
 ]
